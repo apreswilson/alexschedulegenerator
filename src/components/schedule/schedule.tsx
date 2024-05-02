@@ -4,7 +4,7 @@ function Schedule() {
 
   return (
     <div className="schedule table">
-      <h1 className="title">Generated Schedule</h1>
+      <h1 className="title">Schedule</h1>
       <table>
         <tr>
           <th>Employee</th>
