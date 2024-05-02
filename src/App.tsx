@@ -4,7 +4,7 @@ import Schedule from './components/schedule/schedule';
 
 
 function App() {
-
+  console.log("test")
   return (
     <>
       <Form />
