@@ -1,0 +1,144 @@
+.schedule-form {
+  margin-top: 100px;
+}
+
+.form {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row-1 select {
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+
+.row-2,
+.row-3 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.title {
+  text-align: center;
+  margin: 0;
+  background-color: rgb(53, 125, 237);
+  margin-top: 50px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 10px 10px 0 0;
+}
+
+form h1 {
+  font-size: 20px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid black;
+}
+
+.container:hover input~.checkmark {
+  background-color: rgb(240, 240, 240);
+}
+
+.container input:checked~.checkmark {
+  background-color: rgb(53, 125, 237);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.clock-in-time,
+.clock-out-time {
+  width: 100px;
+  font-size: 22px;
+  height: 30px;
+}
+
+.employee-name {
+  width: 350px;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.row-3 button {
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  background-color: rgb(53, 125, 237);
+  color: white;
+}
+
+.row-3 button:hover {
+  cursor: pointer;
+  background-color: rgba(53, 125, 237, 0.8);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+    margin: 50px auto auto auto;
+  }
+}
