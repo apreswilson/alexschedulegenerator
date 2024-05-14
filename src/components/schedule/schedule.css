@@ -44,6 +44,15 @@ table {
 @media screen and (max-width: 1000px) {
   table {
     width: 95dvw;
-    overflow-x: scroll;
+  }
+
+  .schedule-table table th {
+    font-size: 17px;
+    padding: 0px;
+  }
+
+  .schedule-table table td {
+    font-size: 15px;
+    padding: 20px 0 20px 0;
   }
 }
