@@ -3,6 +3,7 @@ import './App.css';
 import Form from './components/form/form';
 import Schedule from './components/schedule/schedule';
 
+//TODO: Fix CSS for table overflow-x.
 function App() {
   const [scheduleGenerated, setScheduleGenerated] = useState<{ employeeName: string; startTime: string; endTime: string }[]>([]);
 
